@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Transformice.Modules
 {
@@ -264,6 +264,11 @@ namespace Transformice.Modules
             }
         }
 
+        public void WriteBoolean(bool data)
+        {
+            this.Write(data ? 1 : 0);
+        }
+
         public void WriteByte(byte data)
         {
             this.Write((data >> 0) & 255);
@@ -298,6 +303,12 @@ namespace Transformice.Modules
         public void WriteUTF(string data)
         {
             this.IWriteUTF(data);
+        }
+
+        public bool ReadBoolean()
+        {
+            int data = this.Read();
+            return data != 0;
         }
 
         public byte ReadByte()
@@ -338,6 +349,11 @@ namespace Transformice.Modules
         public string ReadUTF()
         {
             return this.IReadUTF();
+        }
+
+        public bool BytesAvailable()
+        {
+            return this.Buffer.Length > 0;
         }
 
         public string ToRepr()
