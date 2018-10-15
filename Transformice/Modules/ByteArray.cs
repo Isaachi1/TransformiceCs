@@ -87,6 +87,7 @@ namespace Transformice.Modules
 
             Array.Copy(this.Buffer, off, data, 0, count);
             Array.Copy(this.Buffer, count, newBuffer, 0, this.Length);
+            this.Buffer = newBuffer;
             return data;
         }
 
@@ -97,6 +98,7 @@ namespace Transformice.Modules
 
             Array.Copy(buffer, off, data, 0, count);
             Array.Copy(buffer, count, newBuffer, 0, buffer.Length - count);
+            buffer = newBuffer;
             return data;
         }
 
