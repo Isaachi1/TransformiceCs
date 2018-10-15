@@ -9,3 +9,5 @@ Código Base para Source de Transformice em C# (Visual Studio).
 Sim, mas ele sempre vai depender do .NET Framework pois não será compilado como código nativo (você pode tentar o [CoreRT](https://github.com/dotnet/corert "Repositório Github, CoreRT")).
 
 ![alt text](https://i.imgur.com/Ito0Oiw.png "Aplicação em Execução")
+
+Tags: <em>transformice base, base transformice, transformice source, transformice base, transformice master, master transformice, transformice c#, transformice .net, transformice dotnet, transformice NET, transformice net, transformice .NET, transformice dotNET, transformice csharp, transformice java, aulamice, aulamice source</em>
