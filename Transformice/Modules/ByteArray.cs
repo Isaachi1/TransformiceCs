@@ -344,7 +344,7 @@ namespace Transformice.Modules
 
             foreach (int chr in this.Buffer)
             {
-                if (chr > 31 && chr < 128)
+                if (chr > 31 && chr < 127)
                 {
                     stored += (char)(chr);
                 }
