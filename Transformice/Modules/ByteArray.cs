@@ -330,7 +330,7 @@ namespace Transformice.Modules
             int data6 = this.Read() << 16;
             int data7 = this.Read() << 8;
             int data8 = this.Read() << 0;
-            return (int)(data1 | data2 | data3 | data4 | data5 | data6 | data7 | data8);
+            return (long)(data1 | data2 | data3 | data4 | data5 | data6 | data7 | data8);
         }
 
         public string ReadUTF()
