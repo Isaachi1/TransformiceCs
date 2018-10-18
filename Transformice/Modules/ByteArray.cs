@@ -263,6 +263,14 @@ namespace Transformice.Modules
                 Array.Copy(byteBuffer, 0, this.Buffer, 0, buffer.Length);
             }
         }
+        
+        public void WriteBytes(byte[] data)
+        {
+            foreach(byte b in data)
+            {
+                this.Write(b);
+            }
+        }
 
         public void WriteBoolean(bool data)
         {
